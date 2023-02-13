@@ -11,6 +11,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Demo2_1_Activities"
         tools:targetApi="31">
+        <activity android:name=".SecondActivity"
+            android:label = "Second Activity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=
+                    "com.example.demo2_1_activities.MainActivity" />
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
